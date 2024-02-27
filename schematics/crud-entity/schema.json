@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "crud-entity",
+  "title": "Crud entity",
+  "type": "object",
+  "description": "Generate crud entity and inputs",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "crud table name"
+    },
+    "path": {
+      "type": "string",
+      "description": "folder to generate"
+    }
+  },
+  "required": ["name", "path"]
+}

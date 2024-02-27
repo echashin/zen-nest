@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "crud-controller",
+  "title": "Crud controller",
+  "type": "object",
+  "description": "Generate crud controller",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "crud table name"
+    },
+    "path": {
+      "type": "string",
+      "description": "folder to generate"
+    }
+  },
+  "required": ["name", "path"]
+}

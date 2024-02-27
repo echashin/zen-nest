@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "crud-controller": {
+      "schema": "./crud-controller/schema.json",
+      "description": "A crud controller.",
+      "factory": "./crud-controller/index#crudControllerSchematics"
+    },
+    "crud-entity": {
+      "schema": "./crud-entity/schema.json",
+      "description": "A crud entity.",
+      "factory": "./crud-entity/index#crudEntitySchematics"
+    }
+  }
+}
