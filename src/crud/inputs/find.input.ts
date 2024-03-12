@@ -6,7 +6,7 @@ export class FindInput {
   @ApiProperty({
     type: String,
     isArray: false,
-    description: 'Selects resource fields. <a href="https://github.com/nestjsx/crud/wiki/Requests#select" target="_blank">Docs</a>',
+    description: 'Selects resource fields. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#select" target="_blank">Docs</a>',
     required: false,
     //format: 'form',
   })
@@ -17,7 +17,7 @@ export class FindInput {
     type: String,
     isArray: false,
     required: false,
-    description: 'Adds search condition. <a href="https://github.com/nestjsx/crud/wiki/Requests#search" target="_blank">Docs</a>',
+    description: 'Adds search condition. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#search" target="_blank">Docs</a>',
   })
   @Expose()
   s?: string;
@@ -26,7 +26,7 @@ export class FindInput {
     type: String,
     isArray: true,
     required: false,
-    description: 'Adds filter condition. <a href="https://github.com/nestjsx/crud/wiki/Requests#filter" target="_blank">Docs</a>',
+    description: 'Adds filter condition. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#filter" target="_blank">Docs</a>',
   })
   @Expose()
   filter?: string[];
@@ -35,7 +35,7 @@ export class FindInput {
     type: String,
     isArray: true,
     required: false,
-    description: 'Adds OR condition. <a href="https://github.com/nestjsx/crud/wiki/Requests#or" target="_blank">Docs</a>',
+    description: 'Adds OR condition. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#or" target="_blank">Docs</a>',
   })
   @Expose()
   or?: string[];
@@ -44,7 +44,7 @@ export class FindInput {
     type: String,
     isArray: true,
     required: false,
-    description: 'Adds sort by field. <a href="https://github.com/nestjsx/crud/wiki/Requests#sort" target="_blank">Docs</a>',
+    description: 'Adds sort by field. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#sort" target="_blank">Docs</a>',
   })
   @Expose()
   sort?: string[];
@@ -53,7 +53,7 @@ export class FindInput {
     type: String,
     isArray: true,
     required: false,
-    description: 'Adds relational resources. <a href="https://github.com/nestjsx/crud/wiki/Requests#join" target="_blank">Docs</a>',
+    description: 'Adds relational resources. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#join" target="_blank">Docs</a>',
   })
   @Expose()
   join?: string[];
@@ -62,24 +62,16 @@ export class FindInput {
     type: Number,
     isArray: false,
     required: false,
-    description: 'Limit amount of resources. <a href="https://github.com/nestjsx/crud/wiki/Requests#limit" target="_blank">Docs</a>',
+    description: 'Limit amount of resources. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#limit" target="_blank">Docs</a>',
   })
   @Expose()
   limit?: number;
-
-  // @ApiProperty({
-  //   type: Number,
-  //   isArray: false,
-  //   required: false,
-  //   description: 'Offset amount of resources. <a href="https://github.com/nestjsx/crud/wiki/Requests#offset" target="_blank">Docs</a>',
-  // })
-  // offset?: number;
 
   @ApiProperty({
     type: Number,
     isArray: false,
     required: false,
-    description: 'Page portion of resources. <a href="https://github.com/nestjsx/crud/wiki/Requests#page" target="_blank">Docs</a>',
+    description: 'Page portion of resources. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#page" target="_blank">Docs</a>',
     example: 1,
   })
   @Expose()
@@ -98,7 +90,7 @@ export class FindInput {
   //   type: Number,
   //   isArray: false,
   //   required: false,
-  //   description: 'Reset cache (if was enabled). <a href="https://github.com/nestjsx/crud/wiki/Requests#cache" target="_blank">Docs</a>',
+  //   description: 'Reset cache (if was enabled). <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#cache" target="_blank">Docs</a>',
   // })
   // cache?: number;
 }

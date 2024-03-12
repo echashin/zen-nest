@@ -6,7 +6,7 @@ export class FindOneInput {
   @ApiProperty({
     type: String,
     isArray: false,
-    description: 'Selects resource fields. <a href="https://github.com/nestjsx/crud/wiki/Requests#select" target="_blank">Docs</a>',
+    description: 'Selects resource fields. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#select" target="_blank">Docs</a>',
     required: false,
   })
   @Expose()
@@ -16,7 +16,7 @@ export class FindOneInput {
     type: String,
     isArray: true,
     required: false,
-    description: 'Adds relational resources. <a href="https://github.com/nestjsx/crud/wiki/Requests#join" target="_blank">Docs</a>',
+    description: 'Adds relational resources. <a href="https://github.com/echashin/zen-nest/wiki/zen-nest-crud#join" target="_blank">Docs</a>',
   })
   @Expose()
   join?: string[];
